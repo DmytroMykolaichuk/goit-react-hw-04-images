@@ -35,7 +35,7 @@ export function App() {
           "We didn't find anything for this search :(  Try another option"
         );
       }
-      console.log(data.hits);
+
       setTotal(data.totalHits);
       setImages(prev => [...prev, ...data.hits]);
     } catch (error) {
